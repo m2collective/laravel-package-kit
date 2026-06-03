@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageTool\View\Contracts;
+namespace M2Collective\PackageKit\View\Contracts;
 
 interface Directive
 {

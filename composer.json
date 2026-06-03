@@ -1,6 +1,6 @@
 {
   "$schema": "https://getcomposer.org/schema.json",
-  "name": "m2collective/laravel-package-tool",
+  "name": "m2collective/laravel-package-kit",
   "keywords": [],
   "license": "MIT",
   "require": {
@@ -8,7 +8,7 @@
   },
   "autoload": {
     "psr-4": {
-      "M2Collective\\PackageTool\\": "src/"
+      "M2Collective\\PackageKit\\": "src/"
     }
   },
   "authors": [
@@ -19,7 +19,7 @@
       "role": "Developer"
     }
   ],
-  "homepage": "https://github.com/bu0nq/laravel-package-tool",
+  "homepage": "https://github.com/bu0nq/laravel-package-kit",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
