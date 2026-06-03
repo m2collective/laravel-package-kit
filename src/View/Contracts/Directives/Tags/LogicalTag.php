@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\View\Contracts\Directives;
+namespace M2Collective\PackageKit\View\Contracts\Directives\Tags;
 
-interface CustomLogicalTag
+interface LogicalTag
 {
     /**
      * @return string

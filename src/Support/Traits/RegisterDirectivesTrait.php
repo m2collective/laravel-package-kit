@@ -4,9 +4,9 @@ declare(strict_types=1);
 namespace M2Collective\PackageKit\Support\Traits;
 
 use Illuminate\Support\Facades\Blade;
-use M2Collective\PackageKit\View\Contracts\BaseDirective;
-use M2Collective\PackageKit\View\Contracts\ConditionalDirective;
-use M2Collective\PackageKit\View\Contracts\SimpleDirective;
+use M2Collective\PackageKit\View\Contracts\Directive;
+use M2Collective\PackageKit\View\Contracts\Directives\ConditionalDirective;
+use M2Collective\PackageKit\View\Contracts\Directives\SimpleDirective;
 
 trait RegisterDirectivesTrait
 {
@@ -25,10 +25,10 @@ trait RegisterDirectivesTrait
     }
 
     /**
-     * @param BaseDirective $directive
+     * @param Directive $directive
      * @return void
      */
-    private function registerDirective(BaseDirective $directive) : void
+    private function registerDirective(Directive $directive) : void
     {
         if($directive instanceof ConditionalDirective) {
             Blade::directive($directive->openingName(), [$directive, 'openingHandler']);
