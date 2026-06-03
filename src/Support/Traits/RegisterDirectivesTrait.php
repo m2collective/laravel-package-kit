@@ -4,9 +4,10 @@ declare(strict_types=1);
 namespace M2Collective\PackageKit\Support\Traits;
 
 use Illuminate\Support\Facades\Blade;
-use M2Collective\PackageKit\View\Contracts\Directive;
-use M2Collective\PackageKit\View\Contracts\Directives\ConditionalDirective;
-use M2Collective\PackageKit\View\Contracts\Directives\SimpleDirective;
+use M2Collective\PackageKit\View\Directives\DirectiveInterface;
+use M2Collective\PackageKit\View\Directives\Tags\ClosingTagInterface;
+use M2Collective\PackageKit\View\Directives\Tags\LogicalTagInterface;
+use M2Collective\PackageKit\View\Directives\Tags\OpeningTagInterface;
 
 trait RegisterDirectivesTrait
 {
@@ -25,19 +26,21 @@ trait RegisterDirectivesTrait
     }
 
     /**
-     * @param Directive $directive
+     * @param DirectiveInterface $directive
      * @return void
      */
-    private function registerDirective(Directive $directive) : void
+    private function registerDirective(DirectiveInterface $directive) : void
     {
-        if($directive instanceof ConditionalDirective) {
+        if($directive instanceof OpeningTagInterface) {
             Blade::directive($directive->openingName(), [$directive, 'openingHandler']);
-            Blade::directive($directive->logicalName(), [$directive, 'logicalHandler']);
-            Blade::directive($directive->closingName(), [$directive, 'closingHandler']);
         }
 
-        if($directive instanceof SimpleDirective) {
-            Blade::directive($directive->openingName(), [$directive, 'openingHandler']);
+        if($directive instanceof LogicalTagInterface) {
+            Blade::directive($directive->logicalName(), [$directive, 'logicalHandler']);
+        }
+
+        if($directive instanceof ClosingTagInterface) {
+            Blade::directive($directive->closingName(), [$directive, 'closingHandler']);
         }
     }
 }

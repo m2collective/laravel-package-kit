@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\View\Contracts\Directives\Tags;
+namespace M2Collective\PackageKit\View\Directives\Tags;
 
-interface ClosingTag
+interface ClosingTagInterface
 {
     /**
      * @return string
