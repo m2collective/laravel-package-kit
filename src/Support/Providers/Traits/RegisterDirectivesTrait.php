@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\Support\Traits;
+namespace M2Collective\PackageKit\Support\Providers\Traits;
 
 use Illuminate\Support\Facades\Blade;
 use M2Collective\PackageKit\View\Directives\DirectiveInterface;
