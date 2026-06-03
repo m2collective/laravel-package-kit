@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\Support\Providers;
+namespace M2Collective\PackageKit\Support;
 
 use Illuminate\Support\ServiceProvider;
 
