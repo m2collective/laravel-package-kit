@@ -1,0 +1,28 @@
+{
+  "$schema": "https://getcomposer.org/schema.json",
+  "name": "m2collective/laravel-package-tools",
+  "keywords": [],
+  "license": "MIT",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "M2Collective\\PackageTools\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "bu0nq",
+      "email": "hello@bu0nq.ru",
+      "homepage": "https://bu0nq.ru",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/bu0nq/laravel-device-detect-manager",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  }
+}
