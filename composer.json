@@ -19,7 +19,7 @@
       "role": "Developer"
     }
   ],
-  "homepage": "https://github.com/bu0nq/laravel-package-kit",
+  "homepage": "https://github.com/m2collective/laravel-package-kit",
   "prefer-stable": true,
   "config": {
     "sort-packages": true
