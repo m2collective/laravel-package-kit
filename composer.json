@@ -20,9 +20,9 @@
     }
   ],
   "homepage": "https://github.com/bu0nq/laravel-package-kit",
-  "minimum-stability": "dev",
   "prefer-stable": true,
   "config": {
     "sort-packages": true
-  }
+  },
+  "minimum-stability": "dev"
 }
