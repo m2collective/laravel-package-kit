@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageTools\Support\Traits;
+namespace M2Collective\PackageTool\Support\Traits;
 
 use Illuminate\Support\Facades\Blade;
-use M2Collective\PackageTools\View\Contracts\Directive;
+use M2Collective\PackageTool\View\Contracts\Directive;
 
 trait RegisterDirectivesTrait
 {
