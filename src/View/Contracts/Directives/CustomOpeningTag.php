@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\View\Contracts;
+namespace M2Collective\PackageKit\View\Contracts\Directives;
 
 interface CustomOpeningTag
 {
