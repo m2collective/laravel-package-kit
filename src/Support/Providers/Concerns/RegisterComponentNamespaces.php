@@ -16,7 +16,7 @@ trait RegisterComponentNamespaces
     {
         if($components !== [] && $registering) {
             foreach ($components as $namespace => $prefix) {
-                $this->registerComponentNamespace($prefix, $namespace);
+                $this->registerComponentNamespace($namespace, $prefix);
             }
         }
     }
