@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace M2Collective\PackageKit\Support\Providers\Traits;
+namespace M2Collective\PackageKit\Support\Providers\Concerns;
 
 use Illuminate\Support\Facades\Blade;
 use M2Collective\PackageKit\View\Directives\DirectiveInterface;
@@ -9,7 +9,7 @@ use M2Collective\PackageKit\View\Directives\Tags\ClosingTagInterface;
 use M2Collective\PackageKit\View\Directives\Tags\LogicalTagInterface;
 use M2Collective\PackageKit\View\Directives\Tags\OpeningTagInterface;
 
-trait RegisterDirectivesTrait
+trait RegisterDirectives
 {
     /**
      * @param array $directives
